@@ -1,3 +1,6 @@
 [submodule "Detectron"]
 	path = Detectron
 	url = https://github.com/facebookresearch/Detectron.git
+[submodule "kits19"]
+	path = kits19
+	url = https://github.com/neheller/kits19.git
