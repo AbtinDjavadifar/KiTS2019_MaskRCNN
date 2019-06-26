@@ -1,0 +1,6 @@
+scikit-image
+Pillow
+scipy
+matplotlib
+nibabel
+numpy==1.16.4
