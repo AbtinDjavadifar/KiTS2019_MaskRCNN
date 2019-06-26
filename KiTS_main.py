@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Tue Jun 18 19:27:29 2019
 
@@ -14,8 +13,8 @@ import json
 
 
 
-data_path = 'C:\Users\Abtin\Desktop\KiTS\dataselected\'
-output_path = 'C:\Users\Abtin\Desktop\KiTS\kidneys_train2019\'
+data_path = 'C:/Users/Abtin/Desktop/KiTS/train/dataselected/'
+output_path = 'C:/Users/Abtin/Desktop/KiTS/train/kidneys_train2019/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
 case_folders.sort()
 
