@@ -4,3 +4,6 @@
 [submodule "kits19"]
 	path = kits19
 	url = https://github.com/neheller/kits19.git
+[submodule "pycococreator"]
+	path = pycococreator
+	url = https://github.com/waspinator/pycococreator.git
