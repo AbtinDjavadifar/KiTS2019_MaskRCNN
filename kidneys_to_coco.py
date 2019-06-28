@@ -33,7 +33,7 @@ LICENSES = [
 CATEGORIES = [
     {
         'id': 1,
-        'name': 'backgorund',
+        'name': 'background',
     },
     {
         'id': 2,
