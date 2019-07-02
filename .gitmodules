@@ -7,3 +7,6 @@
 [submodule "pycococreator"]
 	path = pycococreator
 	url = https://github.com/waspinator/pycococreator.git
+[submodule "maskrcnn-benchmark"]
+	path = maskrcnn-benchmark
+	url = https://github.com/facebookresearch/maskrcnn-benchmark
