@@ -3,7 +3,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jun 18 19:27:29 2019
-
 @author: abtin
 """
 
@@ -18,7 +17,6 @@ images_path = '/home/abtin/kits19/train/kidneys_train2019/'
 annotations_path = '/home/abtin/kits19/train/annotations/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
 case_folders.sort()
-
 
 for i in range(len(case_folders)):
     
