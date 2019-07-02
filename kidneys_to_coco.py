@@ -34,14 +34,17 @@ CATEGORIES = [
     {
         'id': 1,
         'name': 'background',
+        'supercategory': 'object',
     },
     {
         'id': 2,
         'name': 'kidney',
+        'supercategory': 'object',
     },
     {
         'id': 3,
         'name': 'tumor',
+        'supercategory': 'object',
     },
 ]
 
