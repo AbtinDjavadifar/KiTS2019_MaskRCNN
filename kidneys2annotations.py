@@ -10,7 +10,6 @@ import os
 import numpy as np
 import nibabel as nib
 import scipy.misc
-import numpy as np
 
 data_path = '/home/abtin/kits19/train/dataselected/'
 images_path = '/home/abtin/kits19/train/kidneys_train2019/'
