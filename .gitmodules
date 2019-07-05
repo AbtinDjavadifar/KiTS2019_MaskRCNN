@@ -10,3 +10,6 @@
 [submodule "maskrcnn-benchmark"]
 	path = maskrcnn-benchmark
 	url = https://github.com/facebookresearch/maskrcnn-benchmark
+[submodule "Mask_RCNN"]
+	path = Mask_RCNN
+	url = https://github.com/AbtinJ/Mask_RCNN.git
