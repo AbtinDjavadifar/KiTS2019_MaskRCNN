@@ -11,7 +11,7 @@ import numpy as np
 import nibabel as nib
 import scipy.misc
 
-data_path = '/home/abtin/kits19/train/dataselected/'
+data_path = '/home/abtin/kits19/train/data/'
 images_path = '/home/abtin/kits19/train/kidneys_train2019/'
 annotations_path = '/home/abtin/kits19/train/annotations/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]

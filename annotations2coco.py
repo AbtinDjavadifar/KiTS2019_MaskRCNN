@@ -15,7 +15,7 @@ ANNOTATION_DIR = os.path.join(ROOT_DIR, "annotations")
 
 INFO = {
     "description": "KiTS Dataset",
-    "url": "https://github.com/AbtinJ/kidneys_detectron",
+    "url": "https://github.com/AbtinJ/Kidneys_MaskRCNN",
     "version": "1.0",
     "year": 2019,
     "contributor": "Abtin",
