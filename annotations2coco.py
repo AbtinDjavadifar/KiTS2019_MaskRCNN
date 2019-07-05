@@ -16,7 +16,7 @@ ANNOTATION_DIR = os.path.join(ROOT_DIR, "annotations")
 INFO = {
     "description": "KiTS Dataset",
     "url": "https://github.com/AbtinJ/kidneys_detectron",
-    "version": "0.1.0",
+    "version": "1.0",
     "year": 2019,
     "contributor": "Abtin",
     "date_created": datetime.datetime.utcnow().isoformat(' ')
@@ -77,8 +77,8 @@ def main():
         "annotations": []
     }
 
-    image_id = 1
-    segmentation_id = 1
+    image_id = 0
+    segmentation_id = 0
 
     # filter for jpeg images
     for root, _, files in os.walk(IMAGE_DIR):
