@@ -11,9 +11,9 @@ import numpy as np
 import nibabel as nib
 import scipy.misc
 
-data_path = '/home/abtin/kits19/train/data/'
-images_path = '/home/abtin/kits19/train/kidneys_train2019/'
-annotations_path = '/home/abtin/kits19/train/annotations/'
+data_path = '/home/aeroclub/Abtin/mini_data'
+images_path = '/home/aeroclub/Abtin/train/kidneys_train2019/'
+annotations_path = '/home/aeroclub/Abtin/train/annotations/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
 case_folders.sort()
 
