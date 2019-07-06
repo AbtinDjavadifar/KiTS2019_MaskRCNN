@@ -10,10 +10,11 @@ import os
 import numpy as np
 import nibabel as nib
 import scipy.misc
+import imageio
 
 data_path = '/home/aeroclub/Abtin/mini_data'
-images_path = '/home/aeroclub/Abtin/train/kidneys_train2019/'
-annotations_path = '/home/aeroclub/Abtin/train/annotations/'
+images_path = '/home/aeroclub/Abtin/coco_kidney/train2019/'
+masks_path = '/home/aeroclub/Abtin/coco_kidney/masks/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
 case_folders.sort()
 
@@ -33,10 +34,10 @@ for i in range(len(case_folders)):
         kidney = (annotations_data[j,:,:] == 1).astype(int)*255
         tumor = (annotations_data[j,:,:] == 2).astype(int)*255
 
-        scipy.misc.imsave('{}{}_{}.jpg'.format(images_path, case_folders[i], str(j)), images_data[j,:,:])
-        scipy.misc.imsave('{}{}_{}_background.png'.format(annotations_path, case_folders[i], str(j)), background.astype(np.uint8))
-        scipy.misc.imsave('{}{}_{}_kidney.png'.format(annotations_path, case_folders[i], str(j)), kidney.astype(np.uint8))
-        scipy.misc.imsave('{}{}_{}_tumor.png'.format(annotations_path, case_folders[i], str(j)), tumor.astype(np.uint8))
+        imageio.imwrite('{}{}_{}.jpg'.format(images_path, case_folders[i], str(j)), images_data[j,:,:])
+        # scipy.misc.imsave('{}{}_{}_background.png'.format(masks_path, case_folders[i], str(j)), background.astype(np.uint8))
+        imageio.imwrite('{}{}_{}_kidney.png'.format(masks_path, case_folders[i], str(j)), kidney.astype(np.uint8))
+        imageio.imwrite('{}{}_{}_tumor.png'.format(masks_path, case_folders[i], str(j)), tumor.astype(np.uint8))
 
 
 

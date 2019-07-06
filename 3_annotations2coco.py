@@ -9,9 +9,10 @@ from PIL import Image
 import numpy as np
 import pycococreatortools
 
-ROOT_DIR = '/home/aeroclub/Abtin/train'
-IMAGE_DIR = os.path.join(ROOT_DIR, "kidneys_train2019")
-# IMAGE_DIR = os.path.join(ROOT_DIR, "kidneys_val2019")
+ROOT_DIR = '/home/aeroclub/Abtin/coco_kidney'
+IMAGE_DIR = os.path.join(ROOT_DIR, "train2019")
+# IMAGE_DIR = os.path.join(ROOT_DIR, "val2019")
+MASK_DIR = os.path.join(ROOT_DIR, "masks")
 ANNOTATION_DIR = os.path.join(ROOT_DIR, "annotations")
 
 INFO = {
@@ -32,20 +33,20 @@ LICENSES = [
 ]
 
 CATEGORIES = [
+    # {
+    #     'id': 1,
+    #     'name': 'background',
+    #     'supercategory': 'object',
+    # },
     {
         'id': 1,
-        'name': 'background',
-        'supercategory': 'object',
+        'name': 'kidney',
+        'supercategory': 'organ',
     },
     {
         'id': 2,
-        'name': 'kidney',
-        'supercategory': 'object',
-    },
-    {
-        'id': 3,
         'name': 'tumor',
-        'supercategory': 'object',
+        'supercategory': 'organ',
     },
 ]
 
@@ -93,7 +94,7 @@ def main():
             coco_output["images"].append(image_info)
 
             # filter for associated png annotations
-            for root, _, files in os.walk(ANNOTATION_DIR):
+            for root, _, files in os.walk(MASK_DIR):
                 annotation_files = filter_for_annotations(root, files, image_filename)
 
                 # go through each associated annotation
@@ -117,10 +118,10 @@ def main():
 
             image_id = image_id + 1
 
-    with open('{}/instances_kidneys_train2019.json'.format(ROOT_DIR), 'w') as output_json_file:
+    with open('{}/instances_train2019.json'.format(ANNOTATION_DIR), 'w') as output_json_file:
         json.dump(coco_output, output_json_file)
 
-    # with open('{}/instances_kidneys_val2019.json'.format(ROOT_DIR), 'w') as output_json_file:
+    # with open('{}/instances_val2019.json'.format(ANNOTATION_DIR), 'w') as output_json_file:
     #     json.dump(coco_output, output_json_file)
 
 

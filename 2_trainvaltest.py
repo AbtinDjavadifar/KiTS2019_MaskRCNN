@@ -3,9 +3,9 @@ import shutil
 import random
 
 
-dir = '/home/aeroclub/Abtin/train/kidneys_train2019/'
-valoutputdir = '/home/aeroclub/Abtin/train/kidneys_val2019/'
-testoutputdir = '/home/aeroclub/Abtin/train/kidneys_test2019/'
+dir = '/home/aeroclub/Abtin/coco_kidney/train2019/'
+valoutputdir = '/home/aeroclub/Abtin/coco_kidney/val2019/'
+testoutputdir = '/home/aeroclub/Abtin/coco_kidney/test2019/'
 
 files = [file for file in os.listdir(dir) if os.path.isfile(os.path.join(dir, file))]
 
