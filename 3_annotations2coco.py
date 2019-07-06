@@ -9,13 +9,14 @@ from PIL import Image
 import numpy as np
 import pycococreatortools
 
-ROOT_DIR = '/home/abtin/kits19/train'
+ROOT_DIR = '/home/aeroclub/Abtin/train'
 IMAGE_DIR = os.path.join(ROOT_DIR, "kidneys_train2019")
+# IMAGE_DIR = os.path.join(ROOT_DIR, "kidneys_val2019")
 ANNOTATION_DIR = os.path.join(ROOT_DIR, "annotations")
 
 INFO = {
     "description": "KiTS Dataset",
-    "url": "https://github.com/AbtinJ/kidneys_detectron",
+    "url": "https://github.com/AbtinJ/Kidneys_MaskRCNN",
     "version": "1.0",
     "year": 2019,
     "contributor": "Abtin",
@@ -118,6 +119,9 @@ def main():
 
     with open('{}/instances_kidneys_train2019.json'.format(ROOT_DIR), 'w') as output_json_file:
         json.dump(coco_output, output_json_file)
+
+    # with open('{}/instances_kidneys_val2019.json'.format(ROOT_DIR), 'w') as output_json_file:
+    #     json.dump(coco_output, output_json_file)
 
 
 if __name__ == "__main__":

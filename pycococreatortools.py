@@ -61,7 +61,7 @@ def binary_mask_to_polygon(binary_mask, tolerance=0):
 
 def create_image_info(image_id, file_name, image_size, 
                       date_captured=datetime.datetime.utcnow().isoformat(' '),
-                      license_id=1, coco_url="", flickr_url=""):
+                      license_id=1):
 
     image_info = {
             "id": image_id,
@@ -70,8 +70,6 @@ def create_image_info(image_id, file_name, image_size,
             "height": image_size[1],
             "date_captured": date_captured,
             "license": license_id,
-            "coco_url": coco_url,
-            "flickr_url": flickr_url
     }
 
     return image_info
