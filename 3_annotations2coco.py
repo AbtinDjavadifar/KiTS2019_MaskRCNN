@@ -33,11 +33,6 @@ LICENSES = [
 ]
 
 CATEGORIES = [
-    # {
-    #     'id': 1,
-    #     'name': 'background',
-    #     'supercategory': 'object',
-    # },
     {
         'id': 1,
         'name': 'kidney',
