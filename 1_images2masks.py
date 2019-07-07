@@ -36,10 +36,8 @@ for i in range(len(case_folders)):
 
         imageio.imwrite('{}{}_{}.jpg'.format(images_path, case_folders[i], str(j)), images_data[j,:,:])
         # scipy.misc.imsave('{}{}_{}_background.png'.format(masks_path, case_folders[i], str(j)), background.astype(np.uint8))
-        kidney = kidney.astype(np.uint8)
-        tumor = tumor.astype(np.uint8)
-        imageio.imwrite('{}{}_{}_kidney.png'.format(masks_path, case_folders[i], str(j)), kidney)
-        imageio.imwrite('{}{}_{}_tumor.png'.format(masks_path, case_folders[i], str(j)), tumor)
+        imageio.imwrite('{}{}_{}_kidney.png'.format(masks_path, case_folders[i], str(j)), kidney.astype(np.uint8))
+        imageio.imwrite('{}{}_{}_tumor.png'.format(masks_path, case_folders[i], str(j)), tumor.astype(np.uint8))
 
         print("Case number: {} Image Number: {}".format(i,j))
 
