@@ -13,8 +13,8 @@ import scipy.misc
 import imageio
 
 data_path = '/home/aeroclub/Abtin/mini_data'
-images_path = '/home/aeroclub/Abtin/coco_kidney/train2019/'
-masks_path = '/home/aeroclub/Abtin/coco_kidney/masks/'
+images_path = '/home/aeroclub/Abtin/KiTS_coco/train2019/'
+masks_path = '/home/aeroclub/Abtin/KiTS_coco/masks/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
 case_folders.sort()
 

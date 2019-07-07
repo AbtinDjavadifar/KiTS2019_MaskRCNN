@@ -9,9 +9,9 @@ from PIL import Image
 import numpy as np
 import pycococreatortools
 
-ROOT_DIR = '/home/aeroclub/Abtin/coco_kidney'
-IMAGE_DIR = os.path.join(ROOT_DIR, "train2019")
-# IMAGE_DIR = os.path.join(ROOT_DIR, "val2019")
+ROOT_DIR = '/home/aeroclub/Abtin/KiTS_coco'
+# IMAGE_DIR = os.path.join(ROOT_DIR, "train2019")
+IMAGE_DIR = os.path.join(ROOT_DIR, "val2019")
 MASK_DIR = os.path.join(ROOT_DIR, "masks")
 ANNOTATION_DIR = os.path.join(ROOT_DIR, "annotations")
 
@@ -113,11 +113,11 @@ def main():
 
             image_id = image_id + 1
 
-    with open('{}/instances_train2019.json'.format(ANNOTATION_DIR), 'w') as output_json_file:
-        json.dump(coco_output, output_json_file)
-
-    # with open('{}/instances_val2019.json'.format(ANNOTATION_DIR), 'w') as output_json_file:
+    # with open('{}/instances_train2019.json'.format(ANNOTATION_DIR), 'w') as output_json_file:
     #     json.dump(coco_output, output_json_file)
+
+    with open('{}/instances_val2019.json'.format(ANNOTATION_DIR), 'w') as output_json_file:
+        json.dump(coco_output, output_json_file)
 
 
 if __name__ == "__main__":
