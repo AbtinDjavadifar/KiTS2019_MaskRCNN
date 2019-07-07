@@ -12,7 +12,7 @@ import nibabel as nib
 import scipy.misc
 import imageio
 
-data_path = '/home/aeroclub/Abtin/mini_data'
+data_path = '/home/aeroclub/PycharmProjects/Kidneys_MaskRCNN/kits19'
 images_path = '/home/aeroclub/Abtin/KiTS_coco/train2019/'
 masks_path = '/home/aeroclub/Abtin/KiTS_coco/masks/'
 case_folders = [f for f in os.listdir(data_path) if os.path.isdir(os.path.join(data_path, f))]
