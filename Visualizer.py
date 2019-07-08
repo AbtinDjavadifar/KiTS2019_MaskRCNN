@@ -13,8 +13,8 @@ import skimage.io as io
 import matplotlib.pyplot as plt
 import pylab
 
-image_directory = '/home/abtin/kits19/mini_train/kidneys_train2019/'
-annotation_file = '/home/abtin/kits19/mini_train/instances_kidneys_train2019.json'
+image_directory = '/home/aeroclub/Abtin/KiTS_coco/train2019/'
+annotation_file = '/home/aeroclub/Abtin/KiTS_coco/train2019/annotations/instances_train2019.json'
 
 #%%
 example_coco = COCO(annotation_file)
