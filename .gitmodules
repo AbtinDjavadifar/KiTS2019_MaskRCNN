@@ -1,15 +1,3 @@
-[submodule "Detectron"]
-	path = Detectron
-	url = https://github.com/facebookresearch/Detectron.git
-[submodule "kits19"]
-	path = kits19
-	url = https://github.com/neheller/kits19.git
-[submodule "pycococreator"]
-	path = pycococreator
-	url = https://github.com/waspinator/pycococreator.git
-[submodule "maskrcnn-benchmark"]
-	path = maskrcnn-benchmark
-	url = https://github.com/facebookresearch/maskrcnn-benchmark
 [submodule "Mask_RCNN"]
 	path = Mask_RCNN
 	url = https://github.com/AbtinJ/Mask_RCNN.git
