@@ -9,7 +9,7 @@ from PIL import Image
 import numpy as np
 import pycococreatortools
 
-ROOT_DIR = '/home/aeroclub/Abtin/KiTS_coco'
+ROOT_DIR = '/home/abtin/kits19/KiTS_coco'
 # IMAGE_DIR = os.path.join(ROOT_DIR, "train2019")
 IMAGE_DIR = os.path.join(ROOT_DIR, "val2019")
 MASK_DIR = os.path.join(ROOT_DIR, "masks")
