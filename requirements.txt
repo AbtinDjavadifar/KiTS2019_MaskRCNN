@@ -4,3 +4,6 @@ scipy
 matplotlib
 nibabel
 numpy
+imgaug
+cython
+pycocotools
