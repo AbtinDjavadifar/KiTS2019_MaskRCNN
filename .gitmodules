@@ -3,4 +3,4 @@
 	url = https://github.com/AbtinJ/Mask_RCNN.git
 [submodule "coco"]
 	path = coco
-	url = https://github.com/AbtinJ/coco.git
+	url = https://github.com/cocodataset/cocoapi.git
