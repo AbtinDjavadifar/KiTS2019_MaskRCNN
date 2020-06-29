@@ -2,7 +2,7 @@
 
 This repository contains all the necessary files to train MaskRCNN model on KiTS (Kidney Tumor Segmentation Challenge) 2019 dataset. 
 
-## Installing requirements:
+## Installing requirements
 `pip install requirements.txt`
 
 ## Preprocessing the data (creating images, masks, and annotations)
